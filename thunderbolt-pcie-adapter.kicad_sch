@@ -1,434 +1,1224 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 6701ed44-03d2-4633-acc7-b19b85d75ead)
-
-  (paper "A3")
-
-  (title_block
-    (title "Thunderbolt PCIe Adaper")
-    (date "2023-08-09")
-    (rev "1.0.2")
-    (comment 1 "www.antmicro.com")
-    (comment 2 "Antmicro Ltd.")
-  )
-
-  (lib_symbols
-    (symbol "antmicroFiducialMarks:Fiducial_1mm_Mask3mm" (in_bom no) (on_board yes)
-      (property "Reference" "FD" (at 7.315 0.305 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom))
-      )
-      (property "Value" "Fiducial_1mm_Mask3mm" (at 7.315 -2.235 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom))
-      )
-      (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 7.62 -5.08 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "Datasheet" "" (at 7.315 -9.22 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "Author" "Antmicro" (at 7.315 -7.95 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "License" "Apache-2.0" (at 7.315 -10.49 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "ki_description" "Fiducial mask" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Fiducial_1mm_Mask3mm_1_1"
-        (circle (center 0 0) (radius 3.1623)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-    )
-    (symbol "antmicroMechanicalParts:antmicro_logo" (in_bom no) (on_board yes)
-      (property "Reference" "N" (at 15.24 -5.08 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom))
-      )
-      (property "Value" "antmicro_logo" (at 15.24 -7.62 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom))
-      )
-      (property "Footprint" "antmicro-footprints:antmicro-logo" (at 15.24 -10.16 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "Datasheet" "" (at 15.24 -12.7 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "MPN" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Manufacturer" "" (at 15.24 -20.32 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "Author" "Antmicro" (at 15.24 -15.24 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "License" "Apache-2.0" (at 15.24 -17.78 0)
-        (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-      )
-      (property "ki_description" "Mechanical part" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "antmicro_logo_1_1"
-        (text "Logo" (at 0 0 0)
-          (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom))
-        )
-      )
-    )
-  )
-
-
-  (text "Thunderbolt - PCIe Adapter" (at 15.875 22.225 0)
-    (effects (font (size 2.54 2.54) bold) (justify left bottom))
-    (uuid c1f71450-3200-4519-ae94-a26951ddbe13)
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 29.21 269.875 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1d2f4674-dc1c-4acd-858d-c755a9013ab3)
-    (property "Reference" "FID4" (at 34.29 268.605 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 34.29 271.145 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 36.83 274.955 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 36.525 279.095 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 36.525 277.825 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 36.525 280.365 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 29.21 255.905 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 374c0f14-2412-406e-976c-6828fa65ba4a)
-    (property "Reference" "FID2" (at 34.29 254.635 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 34.29 257.175 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 36.83 260.985 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 36.525 265.125 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 36.525 263.855 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 36.525 266.395 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroMechanicalParts:antmicro_logo") (at 113.665 270.51 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 46ada3fb-0378-4dd6-a056-13d4fbef8c4c)
-    (property "Reference" "N1" (at 119.38 268.5262 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Value" "antmicro_logo" (at 119.38 271.0662 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:antmicro-logo_scaled_12mm_mask" (at 128.905 280.67 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 128.905 283.21 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "MPN" "" (at 113.665 270.51 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Manufacturer" "" (at 128.905 290.83 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 128.905 285.75 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 128.905 288.29 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "N1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 71.12 262.89 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 59307d8e-b7ba-47df-b335-3b5b75b07215)
-    (property "Reference" "FID7" (at 76.2 261.62 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 76.2 264.16 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 78.74 267.97 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 78.435 272.11 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 78.435 270.84 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 78.435 273.38 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 71.12 269.875 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 865882db-2ff4-4d36-b8dd-f025af470fd9)
-    (property "Reference" "FID8" (at 76.2 268.605 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 76.2 271.145 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 78.74 274.955 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 78.435 279.095 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 78.435 277.825 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 78.435 280.365 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 29.21 262.89 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 89543cdd-3375-4890-907c-af85877c3e64)
-    (property "Reference" "FID3" (at 34.29 261.62 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 34.29 264.16 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 36.83 267.97 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 36.525 272.11 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 36.525 270.84 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 36.525 273.38 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 29.21 248.92 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a2c025f6-f0af-4d0e-9ef7-9b9397cda45e)
-    (property "Reference" "FID1" (at 34.29 247.65 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 34.29 250.19 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 36.83 254 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 36.525 258.14 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 36.525 256.87 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 36.525 259.41 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 71.12 255.905 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ee368caa-a244-41cf-a5c9-1fc58d1a8903)
-    (property "Reference" "FID6" (at 76.2 254.635 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 76.2 257.175 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 78.74 260.985 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 78.435 265.125 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 78.435 263.855 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 78.435 266.395 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm") (at 71.12 248.92 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ee70da51-b775-4ef4-9448-56ebb1168d28)
-    (property "Reference" "FID5" (at 76.2 247.65 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Fiducial_1mm_Mask3mm" (at 76.2 250.19 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left))
-    )
-    (property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm" (at 78.74 254 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Datasheet" "" (at 78.435 258.14 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "Author" "Antmicro" (at 78.435 256.87 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (property "License" "Apache-2.0" (at 78.435 259.41 0)
-      (effects (font (size 1.27 1.27) (thickness 0.15)) (justify left bottom) hide)
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
-          (reference "FID5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 113.03 54.61) (size 77.47 64.77) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 3cf1056a-c882-4aa3-b4ed-cc5a76fc7bf3)
-    (property "Sheetname" "Connectors" (at 113.03 53.8984 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "connectors.kicad_sch" (at 113.03 119.9646 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 233.68 137.16) (size 77.47 64.77) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 42f40c2a-7d08-4162-a1a3-933510b09406)
-    (property "Sheetname" "TB Controller" (at 233.68 136.4484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "tb.kicad_sch" (at 233.68 202.5146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 233.68 54.61) (size 77.47 64.77) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid c5be216d-0af2-4d3b-b234-e3e028a22446)
-    (property "Sheetname" "Power" (at 233.68 53.8984 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "power.kicad_sch" (at 233.68 119.9646 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 113.03 137.16) (size 77.47 64.77) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid edaf7d73-1c1f-440c-ac8b-fe148d6370ed)
-    (property "Sheetname" "Thunderbolt Controller - Power" (at 113.03 136.4484 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "tb-power.kicad_sch" (at 113.03 202.5146 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-    (instances
-      (project "thunderbolt-pcie-adapter"
-        (path "/6701ed44-03d2-4633-acc7-b19b85d75ead" (page "4"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6701ed44-03d2-4633-acc7-b19b85d75ead")
+	(paper "A3")
+	(title_block
+		(title "Thunderbolt PCIe Adaper")
+		(date "2023-08-09")
+		(rev "1.0.2")
+		(comment 1 "www.antmicro.com")
+		(comment 2 "Antmicro Ltd.")
+	)
+	(lib_symbols
+		(symbol "antmicroFiducialMarks:Fiducial_1mm_Mask3mm"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "FD"
+				(at 7.315 0.305 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "Fiducial_1mm_Mask3mm"
+				(at 7.315 -2.235 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+				(at 7.62 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 7.315 -9.22 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial mask"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Author" "Antmicro"
+				(at 7.315 -7.95 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "License" "Apache-2.0"
+				(at 7.315 -10.49 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_1mm_Mask3mm_1_1"
+				(circle
+					(center 0 0)
+					(radius 3.1623)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
+		(symbol "antmicroMechanicalParts:antmicro_logo"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "N"
+				(at 15.24 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "antmicro_logo"
+				(at 15.24 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "antmicro-footprints:antmicro-logo"
+				(at 15.24 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 15.24 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mechanical part"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 15.24 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "Author" "Antmicro"
+				(at 15.24 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(property "License" "Apache-2.0"
+				(at 15.24 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.15)
+					)
+					(justify left bottom)
+					(hide yes)
+				)
+			)
+			(symbol "antmicro_logo_1_1"
+				(text "Logo"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+							(thickness 0.15)
+						)
+						(justify left bottom)
+					)
+				)
+			)
+		)
+	)
+	(text "Thunderbolt - PCIe Adapter"
+		(exclude_from_sim no)
+		(at 15.875 22.225 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1f71450-3200-4519-ae94-a26951ddbe13")
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 29.21 269.875 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d2f4674-dc1c-4acd-858d-c755a9013ab3")
+		(property "Reference" "FID4"
+			(at 34.29 268.605 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 34.29 271.145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 36.83 274.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.525 279.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 269.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 36.525 277.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 36.525 280.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 29.21 255.905 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "374c0f14-2412-406e-976c-6828fa65ba4a")
+		(property "Reference" "FID2"
+			(at 34.29 254.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 34.29 257.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 36.83 260.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.525 265.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 255.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 36.525 263.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 36.525 266.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroMechanicalParts:antmicro_logo")
+		(at 113.665 270.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46ada3fb-0378-4dd6-a056-13d4fbef8c4c")
+		(property "Reference" "N1"
+			(at 119.38 268.5262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "antmicro_logo"
+			(at 119.38 271.0662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:antmicro-logo_scaled_12mm_mask"
+			(at 128.905 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.905 283.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.665 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 113.665 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 128.905 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 128.905 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 128.905 288.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "N1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 71.12 262.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59307d8e-b7ba-47df-b335-3b5b75b07215")
+		(property "Reference" "FID7"
+			(at 76.2 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 76.2 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 78.74 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.435 272.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 78.435 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 78.435 273.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 71.12 269.875 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "865882db-2ff4-4d36-b8dd-f025af470fd9")
+		(property "Reference" "FID8"
+			(at 76.2 268.605 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 76.2 271.145 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 78.74 274.955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.435 279.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 269.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 78.435 277.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 78.435 280.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 29.21 262.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89543cdd-3375-4890-907c-af85877c3e64")
+		(property "Reference" "FID3"
+			(at 34.29 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 34.29 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 36.83 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.525 272.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 36.525 270.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 36.525 273.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 29.21 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2c025f6-f0af-4d0e-9ef7-9b9397cda45e")
+		(property "Reference" "FID1"
+			(at 34.29 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 34.29 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 36.83 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.525 258.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 36.525 256.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 36.525 259.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 71.12 255.905 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee368caa-a244-41cf-a5c9-1fc58d1a8903")
+		(property "Reference" "FID6"
+			(at 76.2 254.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 76.2 257.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 78.74 260.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.435 265.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 255.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 78.435 263.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 78.435 266.395 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "antmicroFiducialMarks:Fiducial_1mm_Mask3mm")
+		(at 71.12 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ee70da51-b775-4ef4-9448-56ebb1168d28")
+		(property "Reference" "FID5"
+			(at 76.2 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Fiducial_1mm_Mask3mm"
+			(at 76.2 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "antmicro-footprints:Fiducial_1mm_Mask3mm"
+			(at 78.74 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.435 258.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 78.435 256.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 78.435 259.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(reference "FID5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 54.61)
+		(size 77.47 64.77)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3cf1056a-c882-4aa3-b4ed-cc5a76fc7bf3")
+		(property "Sheetname" "Connectors"
+			(at 113.03 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connectors.kicad_sch"
+			(at 113.03 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 137.16)
+		(size 77.47 64.77)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "42f40c2a-7d08-4162-a1a3-933510b09406")
+		(property "Sheetname" "TB Controller"
+			(at 233.68 136.4484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tb.kicad_sch"
+			(at 233.68 202.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 233.68 54.61)
+		(size 77.47 64.77)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c5be216d-0af2-4d3b-b234-e3e028a22446")
+		(property "Sheetname" "Power"
+			(at 233.68 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 233.68 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 113.03 137.16)
+		(size 77.47 64.77)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "edaf7d73-1c1f-440c-ac8b-fe148d6370ed")
+		(property "Sheetname" "Thunderbolt Controller - Power"
+			(at 113.03 136.4484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tb-power.kicad_sch"
+			(at 113.03 202.5146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "thunderbolt-pcie-adapter"
+				(path "/6701ed44-03d2-4633-acc7-b19b85d75ead"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

@@ -1,14 +1,16 @@
 # Thunderbolt to PCIe Adapter
 
-Copyright (c) 2022-2024 [Antmicro](https://www.antmicro.com)
+Copyright (c) 2022-2024 [Antmicro](https://www.antmicro.com) 
+Original design by Antmicro up to rev. 1.0.2.
+Further developed by Kajetan Wierszelis (rev. 1.0.3. and later ones)
 
-![](img/thunderbolt-pcie-adapter-render.png)
+![Render of rev. 1.0.2.](img/thunderbolt-pcie-adapter-render.png)
 
 ## Overview
 
 This project contains open hardware design files for an adapter board wrapping 4-lane (i.e. 4x) PCIe Gen 3.0 devices into a Thunderbolt 3 uplink.
 It is based on the Intel/JHL6340SLLSQ Thunderbolt controller.
-The design files were prepared in KiCad 7.x.
+The design files were prepared in KiCad 7.x & updated to KiCad 8.x.
 
 ## Key features
 

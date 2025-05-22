@@ -154,7 +154,7 @@
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7,
-        "min_text_thickness": 0.15,
+        "min_text_thickness": 0.2032,
         "min_through_hole_diameter": 0.1,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.125,
@@ -327,7 +327,15 @@
         ]
       }
     ],
-    "viewports": []
+    "viewports": [
+      {
+        "h": 7023567.367030039,
+        "name": "diffs-detail",
+        "w": 13506229.895992428,
+        "x": 135736885.05198246,
+        "y": 81882314.08039072
+      }
+    ]
   },
   "boards": [],
   "cvpcb": {

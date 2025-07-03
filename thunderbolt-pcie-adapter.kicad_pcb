@@ -1019387,6 +1019387,31 @@
 		(layer "F.SilkS")
 		(uuid "f0b9f542-f975-4f59-b001-73672458f3ca")
 	)
+	(gr_poly
+		(pts
+			(xy 135.56 82.38) (xy 135.33 86.46) (xy 135.03 93.31) (xy 130.19 93.12) (xy 130.92 72.85) (xy 134.86 73.36)
+		)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "0491f3ba-4d0d-4931-9131-3e9489cca3d7")
+	)
+	(gr_poly
+		(pts
+			(xy 137.06 93.17) (xy 141.22 93.36) (xy 147.89 90.97) (xy 141.21 72.08) (xy 134.86 73.36) (xy 137.54 86.53)
+			(xy 137.45 89.4) (xy 137.44 89.39) (xy 137.06 93.18)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill none)
+		(layer "Dwgs.User")
+		(uuid "9654c545-df85-4a5b-8555-9ece74609d31")
+	)
 	(gr_line
 		(start 123.95 100)
 		(end 170 100)
@@ -1019514,6 +1019539,28 @@
 			(font
 				(size 0.7 0.7)
 				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "Kapton\nTape\nMask"
+		(at 142.84 85.88 0)
+		(layer "Dwgs.User")
+		(uuid "a160bb94-6ba2-4055-8bed-b912a3454754")
+		(effects
+			(font
+				(size 1.5 1)
+				(thickness 0.2)
+			)
+		)
+	)
+	(gr_text "Kapton\nTape\nMask"
+		(at 132.4 85.08 0)
+		(layer "Dwgs.User")
+		(uuid "bf38674a-3a07-421f-bb67-f6b54f93a029")
+		(effects
+			(font
+				(size 1.5 1)
+				(thickness 0.2)
 			)
 		)
 	)

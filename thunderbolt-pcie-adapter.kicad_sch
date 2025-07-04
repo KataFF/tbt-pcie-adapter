@@ -5,11 +5,13 @@
 	(uuid "6701ed44-03d2-4633-acc7-b19b85d75ead")
 	(paper "A3")
 	(title_block
-		(title "Thunderbolt PCIe Adaper")
-		(date "2025-05-09")
+		(title "Thunderbolt PCIe Adapter")
+		(date "2025-07-04")
 		(rev "1.0.3")
-		(comment 1 "www.antmicro.com")
-		(comment 2 "Original design (up to rev 1.0.2) by Antmicro, further modifications by Kajetan Wierszelis")
+		(comment 1 "https://github.com/KataFF/tbt-pcie-adapter")
+		(comment 2 "Further modifications by Kajetan Wierszelis")
+		(comment 3 "www.antmicro.com")
+		(comment 4 "Original design (up to rev 1.0.2) by Antmicro Ltd.")
 	)
 	(lib_symbols
 		(symbol "antmicroFiducialMarks:Fiducial_1mm_Mask3mm"
